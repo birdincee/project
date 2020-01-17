@@ -1,0 +1,18 @@
+
+/* textbox */
+input.error {
+	border-color: #e81a1a !important;
+    color: #e81a1a;
+}
+
+input.valid {
+    border-color: #1ae81d !important;
+    color: #1ae81d;
+}
+
+span.form-error.help-block {
+    color: red;
+    display: block;
+    margin-top: 6px;
+    padding-left: 0;
+}
