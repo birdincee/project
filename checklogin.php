@@ -6,7 +6,6 @@ if ($mysqli -> connect_errno) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
   exit();
 }
-    
     $txtUsername = mysqli_real_escape_string($mysqli,$_POST['txtUsername']);
     $txtPassword = mysqli_real_escape_string($mysqli,$_POST['txtPassword']);
     $strSQL = "SELECT * FROM account WHERE username = '".$txtUsername."' and passwords = '".$txtPassword."' ";

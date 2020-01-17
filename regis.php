@@ -27,5 +27,4 @@ if ($user['username'] === $txtUsername) {
                                 }
 }
 
-
 ?>
