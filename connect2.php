@@ -1,5 +1,5 @@
 <?php
-$bdd=mysqli_connect("localhost","root","","calender");
+$bdd=mysqli_connect("localhost","root","root","calender");
 // Check connection
 if (mysqli_connect_errno())
 {

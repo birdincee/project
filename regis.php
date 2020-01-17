@@ -2,16 +2,18 @@
 session_start();
 require_once "connect2.php";
 
-$txtUsername = mysqli_real_escape_string($_POST['txtUsername']);
-$txtPassword = mysqli_real_escape_string($_POST['txtPassword']);
-$txtfirstName = mysqli_real_escape_string($_POST['txtfirstName']);
-$txtlastname = mysqli_real_escape_string($_POST['txtlastname']);
-$txtphone = mysqli_real_escape_string($_POST['txtphone']);
+// mysqli_real_escape_string parameter ตัวแรกให้ใส่ connection ของ db ซึ่งก็คือตัวแปร $bdd ที่ใช้ใน connect2
+$txtUsername = mysqli_real_escape_string($bdd, $_POST['txtUsername']);
+$txtPassword = mysqli_real_escape_string($bdd, $_POST['txtPassword']);
+$txtfirstName = mysqli_real_escape_string($bdd, $_POST['txtfirstName']);
+$txtlastname = mysqli_real_escape_string($bdd, $_POST['txtlastname']);
+$txtphone = mysqli_real_escape_string($bdd, $_POST['txtphone']);
 
-$user_check = "SELECT * FROM account WHERE username = '$txtUsername' LIMIT 1";
-$resultuser = mysqli_query($bdd, $user_check);
-$user = mysqli_fetch_assoc($resultuser);
-if ($user['username'] === $txtUsername) {
+$sql = "SELECT * FROM account WHERE username = '$txtUsername' LIMIT 1";
+$result = mysqli_query($bdd, $sql);
+$user = mysqli_fetch_assoc($result);
+
+if ($user) {
     echo "<script>alert('Username already exists');</script>";
 } else {
         $sql = "INSERT INTO account (username, passwords, firstnames, lastnames, phone, userlevel) VALUE ('$txtUsername', '$txtPassword', '$txtfirstName', '$txtlastname','$txtphone','user')";
