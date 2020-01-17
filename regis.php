@@ -27,35 +27,5 @@ if ($user['username'] === $txtUsername) {
                                 }
 }
 
-//if(!$param1 = ((isset($Post["txtUsername"]) && trim($_Post["txtUsername"]) != "")? trim($_Post["txtUsername"]) : null )){
-// การตั้งเงื่อนไขแบบบรรทัดเดียว => (เงื่อนไข) ? (หากจริงจะคืนค่านี้) ? (หากเท็จจะคืนค่านี้)
-// ส่วน if(!$param1 = ...) เป็นการกำหนดค่าให้ param1 ถ้าเป็น null จะเข้าเงื่อนไข ถ้าไม่จะแทนค่าใน param1
-//echo "No parameter : param1";
-//die();
-//}
-//if(!$param2 = ((isset($Post["txtPassword"]) && trim($_Post["txtPassword"]) != "")? trim($_Post["txtPassword"]) : null )){
-    //echo "No parameter : param2";
-//die();
-//}
-//if(!$param3 = ((isset($_Post["txtfirstName"]) && trim($_Post["txtfirstName"]) != "")? trim($_Post["txtfirstName"]) : null )){
-    //echo "No parameter : param3";
-//die();
-//}
-//if(!$param4 = ((isset($_Post["txtlastname"]) && trim($_Post["txtlastname"]) != "")? trim($_Post["txtlastname"]) : null )){
-    //echo "No parameter : param4";
-//die();
-//}
-//if(!$param5 = ((isset($_Post["txtphone"]) && trim($_Post["txtphone"]) != "")? trim($_Post["txtphone"]) : null )){
-    //echo "No parameter : param5";
-//die();
-//}
-//ถ้าข้อมูลครบ
-//บันทึกลงฐานข้อมูล
-
-
-
-
-
-
 
 ?>
