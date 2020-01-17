@@ -13,19 +13,19 @@ $sql = "SELECT * FROM account WHERE username = '$txtUsername' LIMIT 1";
 $result = mysqli_query($bdd, $sql);
 $user = mysqli_fetch_assoc($result);
 
-if ($user) {
-    echo "<script>alert('Username already exists');</script>";
-} else {
+if ($user) { // TRUE
+    echo "<script>alert('".$user["username"]." already exists');</script>";
+} else { // FALSE
         $sql = "INSERT INTO account (username, passwords, firstnames, lastnames, phone, userlevel) VALUE ('$txtUsername', '$txtPassword', '$txtfirstName', '$txtlastname','$txtphone','user')";
         $result = mysqli_query($bdd, $sql);
             if ($result) {
-                $_SESSION['success'] = "Insert user successfully";
-                    echo '  <meta http-equiv="refresh" content="0;url=index.php"> ';
+                    $_SESSION['msg'] = "Insert user successfully";
+                    echo '<script>alert("Insert user successfully");window.location = "index.php";</script>';
                         } 
                             else {
                             // ข้อมูลไม่ถูกต้อง
-                        $_SESSION['error'] = "Something went wrong";
-                        echo "Fail";
+                        $_SESSION['msg'] = "Something went wrong";
+                        echo '<script>alert("Something went wrong");window.location = "index.php";</script>';
                                 }
 }
 
