@@ -9,7 +9,7 @@
 </head>
 <body style="background-color:	#181818;">
 <?php 
-include ("navbar.php")
+include ("nevbar2.php")
 ?>
 <div class="container">
         <div class="row centered-form">

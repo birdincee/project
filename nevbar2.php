@@ -11,7 +11,7 @@
     </div>
     <ul class="nav navbar-nav"> <!-- nav left -->
         <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> contact</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100023236341473"><span class="glyphicon glyphicon-phone-alt"></span> contact</a></li>
         <li><a href="calendar.php"><span class="glyphicon glyphicon-calendar"></span> Jobs</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right"> <!-- nav right -->
