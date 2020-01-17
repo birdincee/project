@@ -13,7 +13,7 @@ if ($mysqli -> connect_errno) {
 	$objResult = mysqli_fetch_array($objQuery);
 	if(!$objResult)
 	{
-			echo "Username and Password Incorrect!";
+			echo "ทดสอบ!";
 	}
 	else
 	{
