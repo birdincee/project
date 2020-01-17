@@ -16,14 +16,5 @@ include ("navbar.php")
 include ("col.php")
 ?>
 
-
-
-
-
-
-
-
-
-
 </body>
 </html>

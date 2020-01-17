@@ -6,7 +6,7 @@
 
 <nav class="navbar navbar-inverse">
 <ul class="nav navbar-nav">
-      <li class="active"><a href="index.php">Home</a></li>
+      <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
       <li><a href="login.php">login</a></li>
       <li><a href="register.php">register</a></li>
       <li><a href="#">contact</a></li>
