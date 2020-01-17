@@ -6,7 +6,6 @@ if ($mysqli -> connect_errno) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
   exit();
 }
-    
     $txtUsername = mysqli_real_escape_string($mysqli,$_POST['txtUsername']);
     $txtPassword = mysqli_real_escape_string($mysqli,$_POST['txtPassword']);
     $strSQL = "SELECT * FROM account WHERE username = '".$txtUsername."' and passwords = '".$txtPassword."' ";
@@ -14,7 +13,7 @@ if ($mysqli -> connect_errno) {
 	$objResult = mysqli_fetch_array($objQuery);
 	if(!$objResult)
 	{
-			echo "ชื่อผู้ใช้และรหัสผ่านไม่ถูกต้อง!";
+		echo "ชื่อผู้ใช้และรหัสผ่านไม่ถูกต้อง!";
 	}
 	else
 	{
