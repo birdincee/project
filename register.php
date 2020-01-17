@@ -55,7 +55,7 @@ include ("navbar.php")
 			    			</div>
 			    			
 			    			<input type="submit" value="Register" class="btn btn-info btn-block">
-			    		
+			    			<a href="login.php" class="btn btn-primary btn-block" role="button">Login</a>
 			    		</form>
 			    	</div>
 	    		</div>

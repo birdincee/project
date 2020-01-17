@@ -15,8 +15,8 @@ include ("navbar.php")
 <div class="container">
     <div class="panel panel-warning">
       <div class="panel-heading"><h2>กรุณาเข้าสู่ระบบก่อนใช้งาน</h2></div>
-      <div class="panel-body">ถ้ายังไม่มี Username โปรดสมัคร Username ก่อนใช้งาน  <a href="#" class="btn btn-primary" role="button">Register</a> <br><br>
-        ถ้ามี Username แล้ว สามารถ Login ได้โดย กดปุ่มนี้ >>>  <a href="#" class="btn btn-success" role="button">Login</a>
+      <div class="panel-body">ถ้ายังไม่มี Username โปรดสมัคร Username ก่อนใช้งาน  <a href="register.php" class="btn btn-primary " role="button">Register</a> <br><br>
+        ถ้ามี Username แล้ว สามารถ Login ได้โดย กดปุ่มนี้ >>>  <a href="login.php" class="btn btn-success" role="button">Login</a>
       
       </div>
     </div>

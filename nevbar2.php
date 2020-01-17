@@ -5,37 +5,42 @@
 <body>
 
 <nav class="navbar navbar-inverse">
-<ul class="nav navbar-nav">
-      <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-      <li><a href="#">contact</a></li>
-      <li><a href="job.php">Jobs</a></li>
-      <?php
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">PARKINGSINGHA</a>  <!-- ส่วนหัว -->
+    </div>
+    <ul class="nav navbar-nav"> <!-- nav left -->
+        <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="index.php"><span class="glyphicon glyphicon-phone-alt"></span> contact</a></li>
+        <li><a href="calendar.php"><span class="glyphicon glyphicon-calendar"></span> Jobs</a></li> 
+    </ul>
+    <ul class="nav navbar-nav navbar-right"> <!-- nav right -->
+        <?php
         session_start();
-        require_once "connect2.php";
-            if (isset($_SESSION["id"])) {
-            $userid = $_SESSION["id"];
+        require_once "connect2.php";    // เชื่อมต่อฐานข้อมูล
+        if (isset($_SESSION["id"])) :   // Set Id
+        ?>
 
-            $sql = "SELECT * FROM account WHERE id = '$userid' LIMIT 1";
+        <?php 
+            $userid = $_SESSION["id"];
+            $sql = "SELECT * FROM account WHERE id = '$userid' LIMIT 1";    // หา id ของ User
             $result = mysqli_query($bdd, $sql);
             $user = mysqli_fetch_assoc($result);
+        ?>
 
-            if ($user) {
-    ?>
-        <li><a href="job.php"><span class="glyphicon glyphicon-user"></span> <?php  echo $user["username"]; ?></a></li> 
-    <?php
-            }
-        }
-        else {
-            ?>
-            <li><a href="login.php">เข้าสู่ระบบ</a></li>
-            <?php
-        }
-      ?>
-    
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-        </ul>
-</ul>
+
+        <?php if($user) : ?>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php  echo $user["firstnames"]; // Show ชื่อ ?></a></li>
+            <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        <?php endif;?>
+
+        <?php else:?>
+
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+        <?php endif;?>
+    </ul>
+  </div>
 </nav>
 
 </body>

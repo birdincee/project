@@ -29,10 +29,8 @@ include ("navbar.php")
 			    			</div>
 			    				
 
-                            
-			    			
 			    			<input type="submit" value="Login" class="btn btn-info btn-block">
-			    		
+			    			<a href="register.php" class="btn btn-primary btn-block" role="button">Register</a>
 			    		</form>
 			    	</div>
 	    		</div>

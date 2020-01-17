@@ -5,13 +5,20 @@
 <body>
 
 <nav class="navbar navbar-inverse">
-<ul class="nav navbar-nav">
-      <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-      <li><a href="login.php">login</a></li>
-      <li><a href="register.php">register</a></li>
-      <li><a href="#">contact</a></li>
-      <li><a href="guestjob.php">Jobs</a></li>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.php">PARKINGSINGHA</a>  <!-- ส่วนหัว -->
+    </div>
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> contact</a></li>
+        <li><a href="guestjob.php"><span class="glyphicon glyphicon-calendar"></span> Jobs</a></li> 
     </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
 </nav>
 
 </body>
