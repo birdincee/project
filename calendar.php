@@ -21,7 +21,10 @@ $events = $req->fetchAll();
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
-
+		
+		<?php 
+		include ("nevbar2.php")
+		?>
 		<title>ตารางงาน</title>
 		<!-- Bootstrap Core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -232,12 +235,12 @@ $events = $req->fetchAll();
 			</div>
 
 		</div>
+
 		<!-- /.container -->
-
-
 		<?php date_default_timezone_set("Asia/Bangkok");
-	$date = date("Y-m-d");
-	?>
+		$date = date("Y-m-d");
+		?>
+
 		<script>
 			$(document).ready(function () {
 	     		$('#calendar').fullCalendar({

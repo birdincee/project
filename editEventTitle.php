@@ -37,5 +37,5 @@ if (isset($_POST['delete']) && isset($_POST['id'])){
 	}
 
 }
-header('Location: index.php');
+echo '<script>alert("ลบเรียบร้อยแล้ว");window.location = "index.php";</script>';
 ?>

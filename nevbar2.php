@@ -7,11 +7,11 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">PARKINGSINGHA</a>  <!-- ส่วนหัว -->
+      <a class="navbar-brand" href="index.php">PARKINGSINGHA</a>  <!-- ส่วนหัว -->
     </div>
     <ul class="nav navbar-nav"> <!-- nav left -->
         <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-        <li><a href="index.php"><span class="glyphicon glyphicon-phone-alt"></span> contact</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> contact</a></li>
         <li><a href="calendar.php"><span class="glyphicon glyphicon-calendar"></span> Jobs</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right"> <!-- nav right -->
@@ -35,7 +35,7 @@
         <?php endif;?>
 
         <?php else:?>
-
+        <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 
         <?php endif;?>
