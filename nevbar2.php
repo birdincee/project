@@ -18,12 +18,12 @@
         <?php
         session_start();
         require_once "connect2.php";    // เชื่อมต่อฐานข้อมูล
-        if (isset($_SESSION["id"])) :   // Set Id
+        if (isset($_SESSION["userid"])) :   // Set Id
         ?>
 
         <?php 
-            $userid = $_SESSION["id"];
-            $sql = "SELECT * FROM account WHERE id = '$userid' LIMIT 1";    // หา id ของ User
+            $userid = $_SESSION["userid"];
+            $sql = "SELECT * FROM account WHERE userid = '$userid' LIMIT 1";    // หา id ของ User
             $result = mysqli_query($bdd, $sql);
             $user = mysqli_fetch_assoc($result);
         ?>

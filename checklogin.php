@@ -17,7 +17,7 @@ if ($mysqli -> connect_errno) {
 	}
 	else
 	{
-			$_SESSION["id"] = $objResult["id"];
+			$_SESSION["userid"] = $objResult["userid"];
 			$_SESSION["userlevel"] = $objResult["userlevel"];
 
 			session_write_close();

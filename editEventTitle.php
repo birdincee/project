@@ -37,5 +37,5 @@ if (isset($_POST['delete']) && isset($_POST['id'])){
 	}
 
 }
-echo '<script>alert("เรียบร้อยแล้ว");window.location = "calendar.php";</script>';
+echo '<script>alert("ดำเนินการเรียบร้อยแล้ว");window.location = "calendar.php";</script>';
 ?>

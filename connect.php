@@ -7,4 +7,8 @@ catch(Exception $e)
 {
         die('Erreur : '.$e->getMessage());
 }
+
+
+/*$bdd = new mysqli('localhost','root','root','calender');*/
+
 ?>
